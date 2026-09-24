@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZUHUR | Checkout</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ZUHUR
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Perfumes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         CHECKOUT HEADER
+    ========================= -->
+
+    <section class="checkout-header">
+
+        <h1>CHECKOUT</h1>
+
+        <p>
+            Complete your details to place your order.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         CHECKOUT SECTION
+    ========================= -->
+
+    <section class="checkout-section">
+
+        <div class="checkout-container">
+
+
+            <!-- =========================
+                 DELIVERY DETAILS
+            ========================= -->
+
+            <div class="delivery-box">
+
+                <h2>
+                    Delivery Details
+                </h2>
+
+
+                <form id="checkoutForm">
+
+
+                    <!-- FULL NAME -->
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- MOBILE -->
+
+                    <div class="form-group">
+
+                        <label for="mobile">
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="mobile"
+                            name="mobile"
+                            placeholder="Enter your mobile number"
+                            maxlength="10"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Delivery Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            placeholder="Enter your complete delivery address"
+                            rows="4"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- CITY + PINCODE -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Enter city"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="pincode">
+                                Pincode
+                            </label>
+
+                            <input
+                                type="text"
+                                id="pincode"
+                                name="pincode"
+                                placeholder="Enter pincode"
+                                maxlength="6"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         PAYMENT
+                    ========================= -->
+
+                    <div class="payment-box">
+
+                        <h2>
+                            Payment Method
+                        </h2>
+
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="Cash on Delivery"
+                                checked
+                            >
+
+                            <span>
+
+                                <strong>
+                                    Cash on Delivery
+                                </strong>
+
+                                <small>
+                                    Pay when your order is delivered.
+                                </small>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- PLACE ORDER -->
+
+                    <button
+                        type="submit"
+                        class="place-order-btn">
+
+                        Place Order
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- =========================
+                 ORDER SUMMARY
+            ========================= -->
+
+            <div class="checkout-summary">
+
+                <h2>
+                    Order Summary
+                </h2>
+
+
+                <div id="checkoutItems">
+                    <!-- Products will appear here -->
+                </div>
+
+
+                <div class="checkout-summary-line"></div>
+
+
+                <div class="checkout-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="checkoutTotal">
+                        ₹0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="logo">
+            ZUHUR
+        </div>
+
+        <p>
+            The Essence of Your Presence.
+        </p>
+
+        <p>
+            © 2026 ZUHUR. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
