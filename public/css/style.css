@@ -1699,3 +1699,24 @@ footer p {
     }
 
 }
+
+/* =========================
+   ZUHUR PREMIUM LOGO
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 7px;
+    color: #d6b36a;
+}
+
+.logo-symbol {
+    font-size: 32px;
+    letter-spacing: 0;
+    color: #f0d18d;
+}
